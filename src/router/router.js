@@ -23,6 +23,11 @@ export default [{
     path: '/detail',
     name: 'Deatil',
     component: () => import('@/components/details')
+  },
+  {
+    path: '/mock',
+    name: 'PostMock',
+    component: () => import('@/components/postMock')
   }
   ]
 }]

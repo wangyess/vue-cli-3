@@ -10,4 +10,14 @@ const router = new VueRouter({
     routes
 })
 
-export default router  
+
+/**
+ * 这里是前置守卫
+ * to 代表要跳到的页面  from 即将离开的页面  next 继续执行
+ * 可以用来判断权限 比如判断token是否存在  不存在跳转到login page
+ */
+// router.beforeEach((to, from, next) => {
+
+// })
+
+export default router

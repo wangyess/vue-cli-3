@@ -16,6 +16,7 @@
     <button @click="addAColumn">add column</button>&nbsp;&nbsp;
     <p>{{age}}</p>
     <br>
+    <br>
   </div>
 </template>
 
@@ -52,7 +53,7 @@ export default {
       window.console.log(this.username)
     },
     changeState() {
-      this.changeTestVlaue('拒北城')
+      this.changeTestVlaue('满城尽悬北凉刀')
       // this.$store.commit('changeTestVlaue', "满城尽悬北凉刀")
     },
     addAColumn(){
