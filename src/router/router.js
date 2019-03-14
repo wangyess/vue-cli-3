@@ -28,6 +28,16 @@ export default [{
     path: '/mock',
     name: 'PostMock',
     component: () => import('@/components/postMock')
+  },
+  {
+    path: '/count-to',
+    name: 'count_to',
+    component: () => import('@/views/count-to/count-to.vue')
+  },
+  {
+    path: '/element',
+    name: 'element',
+    component: ()=> import('@/views/element/element.vue')
   }
   ]
 }]

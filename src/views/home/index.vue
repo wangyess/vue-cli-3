@@ -7,7 +7,11 @@
       <button @click="handleClickBtn">用bus给user组件传值</button> |
       <button @click="handleClickStore">练习 Vuex store</button> |
       <button @click="handleClickPost">post mock</button>
+      <br><br>
+      <button @click="handleClickCount">countUp-让数字动起来</button> |
+      <button @click="handleClickElement">开发一个自由拖动的组件</button>
     </div>
+    <hr>
     <router-view></router-view>
   </div>
 
@@ -35,6 +39,12 @@ export default {
     },
     handleClickPost() {
       this.$router.push('/mock')
+    },
+    handleClickCount(){
+      this.$router.push('/count-to')
+    },
+    handleClickElement(){
+      this.$router.push('./element')
     }
   }
 }
