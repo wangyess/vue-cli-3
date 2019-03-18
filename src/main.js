@@ -4,12 +4,14 @@ import router from './router'
 import store from './store'
 import * as httpRequest from './util/https'
 import bus from './util/bus'
-// import mock from './mock'
-if(process.env.NDDE_ENV !== 'production') require('./mock/index')
-
+import iView from 'iview';
+import 'iview/dist/styles/iview.css'
+import '@/assets/font/iconfont.css'
+if (process.env.NDDE_ENV !== 'production') require('./mock/index')
 Vue.config.productionTip = false
-Vue.prototype.$https = httpRequest 
-Vue.prototype.$bus = bus 
+Vue.prototype.$https = httpRequest
+Vue.prototype.$bus = bus
+Vue.use(iView)
 
 new Vue({
   router,

@@ -9,7 +9,9 @@
       <button @click="handleClickPost">post mock</button>
       <br><br>
       <button @click="handleClickCount">countUp-让数字动起来</button> |
-      <button @click="handleClickElement">开发一个自由拖动的组件</button>
+      <button @click="handleClickElement">开发一个自由拖动的组件</button> |
+      <button @click="handleClickRender">render函数 jsx 插槽</button> |
+      <button @click="handleClickIcon">封装icon图标组件</button>
     </div>
     <hr>
     <router-view></router-view>
@@ -40,11 +42,17 @@ export default {
     handleClickPost() {
       this.$router.push('/mock')
     },
-    handleClickCount(){
+    handleClickCount() {
       this.$router.push('/count-to')
     },
-    handleClickElement(){
+    handleClickElement() {
       this.$router.push('./element')
+    },
+    handleClickRender() {
+      this.$router.push('./render')
+    },
+    handleClickIcon(){
+       this.$router.push('./icon-element')
     }
   }
 }
