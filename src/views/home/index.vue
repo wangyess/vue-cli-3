@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <router-link to='/user'>user</router-link> |
+      <router-link to='/user'>userAdmin</router-link> |
       <router-link to='/product/wangye'>product</router-link> |
       <button @click="hanldeClick">跳转到user</button> |
       <button @click="handleClickBtn">用bus给user组件传值</button> |
